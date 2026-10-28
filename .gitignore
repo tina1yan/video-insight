@@ -1,0 +1,8 @@
+# Downloaded third-party engine and generated video artifacts
+.cache/
+video-insight-output/
+*.cookies
+cookies.txt
+*.session
+.env
+.env.*
