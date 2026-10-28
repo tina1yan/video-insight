@@ -1,8 +1,12 @@
-# Video Insight
+# 你看看（Video Insight）
 
 把 B 站、YouTube 或本地视频整理成 **带时间码的分镜图 + 可核查的文字证据**，再交给支持看图的 AI 进行总结、提示词提取和个性化分析。
 
 这是一个可复用的 Codex/ChatGPT Skill **源码仓库**，不是已经安装到你的 ChatGPT 中的 Skill。核心分镜能力来自 [SAOS-3624/dsh-video-storyboard](https://github.com/SAOS-3624/dsh-video-storyboard)（MIT）。本项目调用上游，不复制或改写其核心代码。
+
+## 自然口令：「你看看」
+
+把这个 Skill **实际安装到可识别 Skills 的聊天环境之后**，你发一个 B 站 / YouTube 链接再说「你看看」，就应该按视频分析流程运行。不需要反复写出内部名字。**仅在 GitHub 存放源码不等于已安装**；在安装前，新聊天不保证自动识别。只有「你看看」却没有明确视频对象时，应先确认需要看什么，而不是误触发。
 
 ## 能做什么
 

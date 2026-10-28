@@ -1,4 +1,4 @@
 interface:
-  display_name: "Video Insight"
-  short_description: "低成本读视频分镜和字幕，提取提示词并分析"
-  default_prompt: "使用 $video-insight 分析这个视频，提取关键观点与视频中的提示词，附时间码和证据，并结合我的情况给建议。"
+  display_name: "你看看"
+  short_description: "一句「你看看」，轻量读视频、提取字幕和提示词"
+  default_prompt: "使用 $video-insight 你看看这个视频，提取关键观点和提示词，附上时间码，再结合我的情况分析。"

@@ -1,11 +1,15 @@
 ---
 name: video-insight
-description: "Analyze Bilibili, YouTube, b23.tv links or local video files using transcript-first retrieval and low-token storyboard evidence. Use when a user asks to watch a video, summarize what was said or shown, extract a prompt verbatim with timestamps, fact-check video claims, or apply its ideas to their own situation."
+description: "Analyze Bilibili, YouTube, b23.tv links or local videos. Use when the user supplies a video link/file and casually says 你看看, 你看看这个, 看看这个视频, 帮我看下, or asks for a video summary, timestamped prompt extraction, fact-checking, or personalized video analysis. Use transcripts plus low-token storyboards; do not trigger on non-video requests."
 ---
 
-# Video Insight
+# 你看看（Video Insight）
 
 Use the least expensive reliable evidence path; never claim to have watched or heard video content that was not actually available.
+
+## Natural Chinese trigger
+
+When a video URL or local video is present, treat casual requests such as **「你看看」** or **「你看看这个」** as requests to apply this video workflow automatically. If the user merely says 「你看看」 without a clear video target, ask what they want inspected. Do not treat unrelated documents, images or code as video tasks. This trigger only works automatically if the Skill is actually installed and visible to the host.
 
 ## Workflow
 
