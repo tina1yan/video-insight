@@ -1,4 +1,13 @@
 interface:
-  display_name: "视频自动分析"
-  short_description: "直接发 B站或 YouTube 链接，自动提炼、核实和个性化分析"
-  default_prompt: "使用 $video-insight 分析这段视频，提取关键观点、提示词和时间码，核查可信度，并结合我的情况给建议。"
+  display_name: 视频自动分析
+  short_description: 直接发 B站或 YouTube 链接，自动提炼、核实和个性化分析
+  default_prompt: 使用 $video-insight 分析这段视频，提取关键观点、提示词和时间码，核查可信度，并结合我的情况给建议。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
