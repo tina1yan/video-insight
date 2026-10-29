@@ -1,4 +1,4 @@
 interface:
-  display_name: "你看看"
-  short_description: "一句「你看看」，轻量读视频、提取字幕和提示词"
-  default_prompt: "使用 $video-insight 你看看这个视频，提取关键观点和提示词，附上时间码，再结合我的情况分析。"
+  display_name: "视频自动分析"
+  short_description: "直接发 B站或 YouTube 链接，自动提炼、核实和个性化分析"
+  default_prompt: "使用 $video-insight 分析这段视频，提取关键观点、提示词和时间码，核查可信度，并结合我的情况给建议。"
