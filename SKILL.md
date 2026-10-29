@@ -1,15 +1,15 @@
 ---
 name: video-insight
-description: "Analyze Bilibili, YouTube, b23.tv links or local videos. Use when the user supplies a video link/file and casually says 你看看, 你看看这个, 看看这个视频, 帮我看下, or asks for a video summary, timestamped prompt extraction, fact-checking, or personalized video analysis. Use transcripts plus low-token storyboards; do not trigger on non-video requests."
+description: "Automatically analyze Bilibili (bilibili.com, b23.tv) and YouTube (youtube.com, youtu.be, Shorts) video links whenever the user sends one, even if the entire message is only a URL and says nothing like 你看看. Retrieve available transcripts, inspect relevant frames, fact-check claims, and personalize the analysis. Also handle local video files. Do not trigger for non-video URLs or when the user explicitly asks only to save or share the link."
 ---
 
 # 你看看（Video Insight）
 
 Use the least expensive reliable evidence path; never claim to have watched or heard video content that was not actually available.
 
-## Natural Chinese trigger
+## Automatic video-link trigger
 
-When a video URL or local video is present, treat casual requests such as **「你看看」** or **「你看看这个」** as requests to apply this video workflow automatically. If the user merely says 「你看看」 without a clear video target, ask what they want inspected. Do not treat unrelated documents, images or code as video tasks. This trigger only works automatically if the Skill is actually installed and visible to the host.
+Whenever a user sends a Bilibili, b23.tv or YouTube video URL, **invoke this skill automatically**, even when the message contains only the URL with no surrounding text or explicit request. Do not require trigger words such as 「你看看」. If the link appears with a question, analyze the video in service of that question. If the user explicitly asks only to save, share, bookmark or perform another non-analysis operation, follow that intent instead. Do not activate for ordinary non-video links. The skill must be installed and visible to the host for automatic invocation to work.
 
 ## Workflow
 
